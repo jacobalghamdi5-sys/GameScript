@@ -41,7 +41,6 @@
             overflow-x: hidden;
         }
 
-        /* --- NAVIGATION HEADER --- */
         header {
             width: 100%;
             padding: 1.25rem 2rem;
@@ -84,18 +83,6 @@
             gap: 1.5rem;
         }
 
-        .nav-links a {
-            color: var(--text-muted);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--text-main);
-        }
-
         .github-btn {
             background: linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.01));
             border: 1px solid var(--border-glow);
@@ -103,6 +90,7 @@
             border-radius: 8px;
             font-weight: 600;
             color: #ffffff !important;
+            text-decoration: none;
             box-shadow: 0 4px 12px rgba(0,0,0,0.2);
         }
 
@@ -110,7 +98,6 @@
             border-color: rgba(255, 3, 3, 0.5);
         }
 
-        /* --- MAIN DASHBOARD LAYOUT --- */
         .dashboard-container {
             max-width: 1400px;
             width: 100%;
@@ -119,7 +106,6 @@
             flex-grow: 1;
         }
 
-        /* Hero Welcome Panel */
         .welcome-banner {
             margin-bottom: 3rem;
             position: relative;
@@ -140,7 +126,6 @@
             font-size: 1.1rem;
         }
 
-        /* Grid Metrics Matrix */
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -174,13 +159,12 @@
 
         .metric-card .status {
             font-size: 0.85rem;
-            color: #10b981; /* Green */
+            color: #10b981;
             display: flex;
             align-items: center;
             gap: 0.25rem;
         }
 
-        /* Core Application Split View */
         .workspace-split {
             display: grid;
             grid-template-columns: 1fr;
@@ -222,7 +206,6 @@
             letter-spacing: -0.02em;
         }
 
-        /* Code Studio Console */
         .terminal-container {
             background: #030712;
             border: 1px solid #1e293b;
@@ -270,7 +253,6 @@
             white-space: pre;
         }
 
-        /* Sidebar Elements */
         .sidebar-list {
             display: flex;
             flex-direction: column;
@@ -298,7 +280,6 @@
             color: var(--text-muted);
         }
 
-        /* --- PREMIUM ASTRO-STYLE FOOTER --- */
         footer {
             margin-top: auto;
             padding: 2.5rem 2rem;
@@ -323,13 +304,11 @@
             <div class="logo-text">GameScript Hub</div>
         </div>
         <nav class="nav-links">
-            <a href="/GameScript-v1.0S-CL/code-pages/">Main Hub</a>
             <a href="https://github.com/jacobalghamdi5-sys/GameScript-v1.0S-CL/" target="_blank" class="github-btn">GitHub Workspace</a>
         </nav>
     </header>
 
     <main class="dashboard-container">
-        
         <div class="welcome-banner">
             <h1>Engine Control Dashboard</h1>
             <p>Telemetry metrics and script logic for the live GameScript processing system.</p>
@@ -354,7 +333,6 @@
         </div>
 
         <div class="workspace-split">
-            
             <div class="panel-card active-runtime">
                 <div class="panel-title-group">
                     <h2>Active Project Deployment</h2>
@@ -418,14 +396,21 @@ ___</div>
                     </div>
                 </div>
             </div>
-
         </div>
-
     </main>
 
     <footer>
         <p>Design inspired by the dashboard and layout systems engineered by <a href="https://astro.build" target="_blank">Astro.build</a>. Built open-source by Jacob Alghamdi.</p>
     </footer>
+
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 19803765;
+        window.__lc.integration_name = "manual_channels";
+        window.__lc.product_name = "livechat";
+        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/19803765/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
 
 </body>
 </html>
