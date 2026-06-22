@@ -7,7 +7,11 @@ import Layout from '../layouts/Layout.astro';
 		<h1>404</h1>
 		<div class="accent-line"></div>
 		<p>Runtime Error: Requested specification module could not be parsed by the dashboard engine.</p>
-		<a href="/GameScript-v1.0S-CL/code-pages/">Return to Mission Control</a>
+		
+		<div class="button-group">
+			<a href="/GameScript-v1.0S-CL/code-pages/" class="btn-primary">Return to Mission Control</a>
+			<button onclick="LiveChatWidget.call('maximize')" class="btn-secondary">Open Live Support Chat</button>
+		</div>
 	</main>
 </Layout>
 
@@ -23,12 +27,14 @@ import Layout from '../layouts/Layout.astro';
 		background: #050508;
 		background-image: linear-gradient(to right, rgba(30, 41, 59, 0.3) 1px, transparent 1px);
 		background-size: 32px 32px;
+		font-family: system-ui, sans-serif;
+		padding: 2rem;
 	}
 	h1 {
 		font-size: 6rem;
-		font-family: system-ui, sans-serif;
 		margin: 0;
 		color: #ff0303;
+		letter-spacing: -0.05em;
 	}
 	.accent-line {
 		height: 4px;
@@ -39,16 +45,32 @@ import Layout from '../layouts/Layout.astro';
 	p {
 		color: #94a3b8;
 		margin-bottom: 2rem;
+		max-width: 500px;
+		line-height: 1.5;
 	}
-	a {
+	.button-group {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.btn-primary, .btn-secondary {
 		color: #ffffff;
 		background: #161b22;
 		border: 1px solid rgba(51, 65, 85, 0.5);
 		padding: 0.75rem 1.5rem;
 		border-radius: 8px;
 		text-decoration: none;
+		font-weight: 600;
+		cursor: pointer;
+		transition: all 0.2s ease;
 	}
-	a:hover {
+	.btn-primary:hover {
 		border-color: #ff0303;
+		box-shadow: 0 0 15px rgba(255, 3, 3, 0.2);
+	}
+	.btn-secondary:hover {
+		border-color: #bc52ee;
+		box-shadow: 0 0 15px rgba(188, 82, 238, 0.2);
 	}
 </style>
