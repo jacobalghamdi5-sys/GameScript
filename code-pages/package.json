@@ -1,0 +1,14 @@
+{
+  "name": "gamescript-dashboard-node",
+  "version": "1.0.0",
+  "description": "The cosmic telemetry dashboard engine workspace layout tracking GameScript v1.0 Start development parameters.",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "astro": "^4.0.0"
+  },
+  "author": "Jacob Alghamdi",
+  "license": "Apache-2.0"
+}
