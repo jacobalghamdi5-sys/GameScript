@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 
-// Base tracking configuration matching the nested portfolio node
+// Pinned exactly to your true repository name: jacobalghamdi5-sys/GameScript
 export default defineConfig({
   site: 'https://jacobalghamdi5-sys.github.io',
-  base: '/GameScript-v1.0S-CL/code-pages',
+  base: '/GameScript/code-pages',
 });
